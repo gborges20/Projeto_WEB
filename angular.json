@@ -26,9 +26,10 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "styles": [            
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+                 ],
             "scripts": [],
             "server": "src/main.server.ts",
             "prerender": true,
@@ -97,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "d6c333f8-0fb8-4169-9b51-40b1eddf3c67"
   }
 }

@@ -1,13 +1,119 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="utf-8">
-  <title>LojaOnline</title>
+  <title>Loja de Peças para Desktop</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+      padding: 0.5rem 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      text-align: center;
+      padding: 2rem;
+      background-color: #e2e2e2;
+    }
+    .hero h2 {
+      margin: 0;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .product {
+      background: white;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .product h3 {
+      margin: 0.5rem 0;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
-  <app-root></app-root>
+  <app-root>
+  <header>
+    <h1>Loja de Peças para Desktop</h1>
+  </header>
+  <nav>
+    <a routerLink="/produto">Produtos</a>
+    <a routerLink="/carrinho">Carrinho</a>
+    <a routerLink="/contato">Contato</a>
+  </nav>
+  <section class="hero">
+    <h2>Encontre as melhores peças para o seu desktop!</h2>
+    <p>Placas de vídeo, processadores, memórias e muito mais com os melhores preços.</p>
+  </section>
+  <section class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/250" alt="Placa de Vídeo">
+      <h3>Placa de Vídeo</h3>
+      <p>R$ 2.500,00</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250" alt="Processador">
+      <h3>Processador</h3>
+      <p>R$ 1.200,00</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250" alt="Memória RAM">
+      <h3>Memória RAM</h3>
+      <p>R$ 400,00</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250" alt="Fonte de Alimentação">
+      <h3>Fonte de Alimentação</h3>
+      <p>R$ 350,00</p>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Loja de Peças para Desktop. Todos os direitos reservados.</p>
+  </footer>
+</app-root>
 </body>
 </html>

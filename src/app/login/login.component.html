@@ -1,0 +1,11 @@
+<h4>Login</h4>
+<div class="alert alert-danger">{{mensagem}}</div>
+
+    <label class="form-label">email:</label>
+    <input type="email" [(ngModel)]="obj.email" class="form-control" required>
+    <label class="form-label">senha:</label>
+    <input type="password" [(ngModel)]="obj.senha" class="form-control" required>
+    <button class="btn btn-success" (click)="fazerLogin()">Acessar</button>
+    <a href="./cadastro" class="btn btn-info">Fazer cadastro</a>
+    <a href="./esqueci" class="btn btn-info">Esqueci minha senha</a>
+

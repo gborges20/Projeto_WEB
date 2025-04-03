@@ -4,12 +4,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { ListaProdutosComponent } from './lista-produtos/lista-produtos.component';
 import { CarrinhoComprasComponent } from './carrinho-compras/carrinho-compras.component';
 import { DetalhesProdutoComponent } from './detalhes-produto/detalhes-produto.component';
+import { NavbarComponent } from './navbar/navbar.component';
+
 
 export const routes: Routes = [
   { path: '', redirectTo: 'produto', pathMatch: 'full' }, // Redireciona para a lista de produtos
   { path: 'produto', component: ListaProdutosComponent },
   { path: 'carrinho', component: CarrinhoComprasComponent },
   { path: 'detalhes', component: DetalhesProdutoComponent },
+  { path: 'login', component: DetalhesProdutoComponent },
+  { path: 'cadastro', component: DetalhesProdutoComponent },
 ];
 
 @NgModule({
